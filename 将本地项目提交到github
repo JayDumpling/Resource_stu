@@ -1,0 +1,36 @@
+git实战篇–将本地项目提交到github/gitlab中
+
+准备工作:
+
+在github/gitlab中新建项目test
+
+1.在本地目录test目录下初始化本地仓库
+
+git init
+
+2.建立本地README.md文件
+
+3.本地提交
+
+git add . 提交当前目录
+git commit -m "first commit"
+
+4.添加远程关联
+
+git remote add origin 库路径
+
+5.本地分支与远程分支关联，并推送到远程仓库
+
+git push --set-upstream origin master
+
+以上5步可以完成本地仓库和分支与远程仓库和分支的关联.
+
+执行所有操作后，有如下结果：
+
+a.产生本地分支master
+
+b.与本地仓库关联的远程仓库origin
+
+c.与本地分支关联的远程分支master
+
+d.本地代码全部提交到了远程仓库，其他人可以共享了
